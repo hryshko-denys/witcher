@@ -10,7 +10,9 @@
     "lint:css": "stylelint ./src",
     "lint:html": "linthtml ./src",
     "lint": "concurrently \"npm run lint:js\" \"npm run lint:css\" \"npm run lint:html\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "./deploy.sh"
   },
   "keywords": [
     "boilerplate",
