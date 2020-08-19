@@ -3,16 +3,54 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE Template</title>
+    <title>Witcher</title>
     <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="icon" href="./images/favicon.ico">
     <script
       type="module"
-      src="main.js"
+      src="./main.js"
       defer
+    >
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     >
     </script>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <main class="main">
+      <h1 class="main__heading">Witcher</h1>
+      <div class="main__witcher-wrapper">
+        <img
+          class="main__witcher"
+          src="./images/witcher.png"
+          alt="witcher"
+        >
+      </div>
+      <div class="main__get-started get-started">
+        <h2 class="get-started__percentage">300%</h2>
+        <h3 class="get-started__text">Welcome bonus</h3>
+        <div class="get-started__bonus">
+          <div id="text-to-copy" class="get-started__code">Witcher</div>
+          <div class="get-started__copy">
+            <button
+              class="get-started__copy-code"
+              id="copy-button"
+            >
+              Copy code
+            </button>
+            <span class="get-started__copied">copied!</span>
+          </div>
+        </div>
+        <button class="get-started__button">Play now</button>
+      </div>
+      <span class="main__conditions">*Terms and Conditions Apply</span>
+      <img
+        class="main__logo"
+        src="./images/logo.png"
+        alt="7 slots reality logo"
+      >
+    </main>
   </body>
 </html>
